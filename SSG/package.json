@@ -1,0 +1,39 @@
+{
+  "name": "story-show-gallery",
+  "version": "2.3.3",
+  "author": "Roman Flössler",
+  "license": "MPL-2.0",
+  "description": "Fully responsive, jQuery photo gallery with vertical jump scroll. SSG optimally combines images and captions to show a whole story in fullscreen, non-distracting environment.",
+  "homepage": "http://ssg.flor.cz/",
+  "main": "ssg.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Roman-Flossler/Simple-Scroll-Gallery.git"
+  },
+  "dependencies": {  
+    "jquery": "^3.3.1"
+  },
+  "keywords": [    
+    "gallery",
+    "photo",
+    "image",
+    "lightbox",
+    "vertical",
+    "jquery",
+    "fullscreen",    
+    "jquery-plugin",
+    "ecosystem:jquery",
+    "responsive",
+    "minimalist",    
+    "photo gallery",
+    "scroll",
+    "touch",
+    "mobile"
+  ],  
+  "bugs": {
+    "url": "https://github.com/Roman-Flossler/Simple-Scroll-Gallery/issues"
+  }
+}

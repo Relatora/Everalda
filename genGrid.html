@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script	src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="http://12.42.204.30:7002/jquery.jtable.js"></script>
+<script src="http://12.42.204.30:7002/scripts/helpers.js"></script>
+<link href="http://12.42.204.30:7002/themes/lightcolor/red/jtable.css" rel="stylesheet">
+
+                                                <!-- The above code should not be changed -->
+
+<link href="css/myStyles.css" rel="stylesheet"> <!-- Modify myStyles.css to add additional styles -->
+
+<title>Cars</title>                             <!-- Modify title for your application -->
+
+<script>
+	$(document).ready(function() {
+		$('#container1').jtable({
+			title : 'Stroller Listing',
+			paging : true,
+			pageSize : 15,
+			sorting : true,
+			defaultSorting : 'model_year DESC',
+			actions : {
+				listAction : 'genJson2.rpgle?jtView=PRODV1'
+			},
+			fields : {
+				Product_id : {
+					title : 'ID',
+					width : '5%',
+					list : true
+				},
+				Model_Name : {
+					title : 'Model',
+					width : '20%',
+					list : true
+				},
+				Model_Description : {
+					title : 'Description',
+					width : '50%',
+					list : true
+				},
+				Quantity_on_hand : {
+					title : 'Quantity on hand',
+					width : '15%',
+					list : true,
+				},
+				price_wholesale : {
+					title : 'Whoesale Price',
+					width : '15%',
+					list : true,
+					display : function(data) {
+						return formatCurrency(data.record.cost_price)
+					},
+				},
+				price_retail : {
+					title : 'Retail Price',
+					width : '15%',
+					list : true,
+					display : function(data) {
+						return formatCurrency(data.record.cost_price)
+					},
+				}
+			}
+		});
+		$('#container1').jtable('load');
+	});
+</script>
+</head>
+
+<body>
+  <div id="container1"></div>
+</body>
+</html>

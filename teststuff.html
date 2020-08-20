@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $.getJSON("team.json", function(data) {
+                    $.each(data, function() {
+                        $.each(this, function(key, value) {
+                            $("#team").append(
+                                "Name: " + value.name + "<br>" + 
+                                "Title: " + value.title + "<br>" + 
+                                "Bio: " + value.bio + "<br><br>"
+                            );
+                        });
+                    }); 
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <button>Get JSON data</button>
+
+    <div></div>
+
+</body>
+
+</html>

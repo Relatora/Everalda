@@ -1,0 +1,87 @@
+/* Sytle sheet created by:Amr Abdallah          Date: March 22th, 2019        ID:C0744378 */
+
+@media only screen and (min-width:660px) {
+    
+    /*Style for table element*/
+    table {
+        border: 0.1em solid #000000;
+        border-collapse: collapse;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+	}
+	
+	/*Style sepecifies border and padding for th and td elements*/
+	th, td {
+		border:0.1em solid #000000;
+		padding:1em;
+	}
+
+	/*Style for the th element*/
+	th{
+		background-color: #1D1D1C;
+		color:#ffffff;
+	}
+
+	/*Style for the caption element*/
+caption	{
+		font-size:2.5em;
+		font-weight:bold;
+        padding-bottom: 0.5em;
+        background-color: rgb(255, 0, 200);
+        color: #ffffff;
+        padding: 1em;
+	}
+
+    
+   /* figure img {
+        background-color: #1D1D1c;
+        display: inline;
+        height: 8em;
+        width: 28%;
+        margin: 1%;
+        padding: 1%;
+    }
+    figure a {
+        background-color: transparent;
+        padding: 0;
+        text-decoration: none;
+    } */
+
+    /*  Define the background color for all the ODD background rows  */
+	.TFtable tr:nth-child(odd){ 
+		background: #fcc8ef;
+	}
+	/*  Define the background color for all the EVEN background rows  */
+	.TFtable tr:nth-child(even){
+        background: #ffffff;
+    }
+  /* Define the hover highlight color for the table row */
+ 
+  .TFtable tr:hover {
+    background-color: #333;
+    color:#ffffff;
+}
+
+/*media query for desktop viewport target screens with a minimum width of 830px */
+
+@media only screen and (min-width:830px) {
+   
+	/*Style for the table element*/
+	table{
+	background-color: #ffffff;
+	width:85%;
+	}
+/*	
+    figure img {
+        height: 15em;
+        opacity: 0.7;
+    }
+    figure img:hover {
+        opacity: 1;
+    }
+*/
+	}
+
+    
+}

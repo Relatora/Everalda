@@ -1,0 +1,156 @@
+/*  Name: Amr Abdallah      Date: 1st of February, 2019         ID: C0744378       address: http://12.42.204.30:7251/ */
+
+h1 {
+    background-color: fuchsia;
+    color: white;
+    font-size: 3.5em;
+}
+
+header h2 {
+    vertical-align: top;
+    background-color: #342d33;
+    color: white;
+    margin-top: -1.7em;
+    font-family: 'rockwell';
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: .83em;
+    margin-top: -35px;
+
+}
+
+main {
+    display: inline-block;
+}
+
+main h2 {
+    vertical-align: top;
+    background-color: #4d0842;
+    border-radius: 70%;
+    color: white;
+    font-family: 'rockwell';
+    font-size: 2em;
+    text-shadow: 2px 2px #ff00aa;
+    text-align: center;
+}
+
+.makebold {
+    font-weight: bold;
+}
+
+.banner {
+    margin-top: -1.2em;
+    width: 100%;
+}
+
+.floatleft {
+    float: left;
+    margin-right: 2%;
+}
+
+.floatright {
+    float: right;
+    margin-left: 2%; 
+    width: 47%;  
+    height: 20em;
+}
+
+#wrapper {
+    width: 70%;
+    margin: 0 auto 0 auto;
+}
+
+footer {
+    margin-top: 2em;
+    font-size: 0.75em;
+    text-align: center;
+}
+
+#menuwrapper {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    margin-top: -0.3em;
+    font-size: 1.25em;
+}
+
+.huge {
+    font-size: 2em;
+    font-family: 'broadway';
+}
+
+/* make nav menu horizontal */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  nav li {
+    float: left;
+    height: 48px;
+  }
+  
+ nav  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 55px 10px;
+    text-decoration: none;
+    
+  }
+  
+ nav  li a:hover:not(.active) {
+    background-color: #111111;
+    padding-top: 13px;
+  }
+  
+  .active {
+    background-color: #ec7cc7;
+  }
+
+  /* nav menu horizontal ends here */
+
+  .blue {
+    background-color: #4e6ec4 ;
+    color: #FFFFFF ; 
+    border-radius: 20px;
+    width: 520px;
+    padding: 5px 10px 5px;
+    margin-top: 3px;
+}
+
+.black_section {
+  background-color: #000000 ;
+  color: #FFFFFF ; 
+  border-radius: 6em;
+  width: 520px;
+  padding: 5px 20px 5px;
+  margin-top: 1.5em;
+  max-width: 48%;
+  font-size: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 2em;
+  text-shadow: 1em;
+  
+}
+
+.pink_section {
+  background-color: #c40995 ;
+  color: #FFFFFF ; 
+  border-radius: 6em;
+  width: 520px;
+  padding: 5px 20px 5px;
+  margin-top: 1.5em;
+  max-width: 48%;
+  margin-bottom: 1.5em;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  
+}

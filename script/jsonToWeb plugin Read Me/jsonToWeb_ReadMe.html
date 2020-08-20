@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jsonToWeb Plugin (project)</title>
+    <style>
+        h1 {
+            background-color: #333;
+            color: #ffffff;
+            padding: 2%;
+            font-size: 2em;
+            margin-bottom: -3.5%;
+        }
+
+        h2 {
+            background-color: #ff5cdc;
+            color: #ffffff;
+            padding: 1%;
+            margin-top: 4%;
+        }
+
+        h3 {
+            margin-top: 3%;
+            margin-bottom: -1.5%;
+            margin-left: 1%;
+        }
+
+        main {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 65%;
+            padding-left: 2%;
+        }
+
+        p {
+            padding-left: 2%;
+            margin-top: 3%;
+        }
+
+        img {
+            border: 2px solid #000000;
+            margin-left: 4%;
+            margin-top: 1%;
+        }
+
+        li {
+            padding: 0.5%;
+        }
+
+        span {
+            color: #d83e64;
+            font-style: oblique
+        }
+
+        li {
+            padding-left: 1%;
+            margin-left: 1%;
+            margin-bottom: 1%;
+        }
+
+        hr {
+            border: 2px solid #333;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <h1>jsonToWeb Plugin</h1>
+            <h2>What it does</h2>
+            <p>
+                This plugin takes in a json link and draws a web control that is fully customizable,
+                giving you granular control over every aspect of how the control would render.
+            </p>
+            <p>
+                The source can be a json request or an array of json data that would yield a result similar to the one
+                below.
+            </p>
+            <img src="images/json_sample.png" alt="json_sample" style="width:30%">
+            <p>
+                All you need is your json data and will data will display right on your webpage.
+            </p>
+            <img src="images/original_plugin.png" alt="original_plugin" style="width:100%">
+            <p>
+                This can be achieved with a minimal amount of code, like is shown below.
+            </p>
+            <img src="images/min_plugin.png" alt="min_plugin" style="width:50%">
+            <p>
+                You can manipulate all the options by invoking the plugin like this
+            </p>
+            <img src="images/override_pic.png" alt="override_pic" style="width:100%">
+            <p>
+                This can be achieved by adding options that can override the default settings of the plugin as shown
+                below.
+            </p>
+            <img src="images/override_code.png" alt="override_code" style="width:50%">
+            <h2>The Rules</h2>
+            <h3>In your HTML file add this code</h3>
+            <p>
+                Add this code in the <strong>head</strong> of your html page.
+            </p>
+            <ol>
+                <li>
+                    <div style="margin-bottom: 5px">Reference to a jQuery CDN.</div>
+                    <img src="images/jquery_cdn.png" alt="jquery_cdn" style="width:100%">
+                </li>
+                <li>
+                    <div style="margin-bottom: 5px">Reference the jsonToWeb plugin.</div>
+                    <img src="images/plugin_link.png" alt="plugin_link" style="width:70%">
+                </li>
+                <li>
+                    <div style="margin-bottom: 5px">Reference the jQuery plugin wrapper.</div>
+                    <img src="images/plugin_wrapper.png" alt="plugin_wrapper" style="width:66%">
+                </li>
+                <li>
+                    <div style="margin-bottom: 5px">Add a div with a class of your choosing to pick up from the js
+                        plugin wrapper.</div>
+                    <img src="images/plugin_class.png" alt="min_plugin" style="width:60%">
+                </li>
+            </ol>
+            <h3>Add This code in the js plugin wrapper file as shown below</h3>
+            <p>
+                This code is used to call the jsonToWeb plugin add compulsory and optional parameters as seen below.
+            </p>
+            <img src="images/all_options.png" alt="all_options" style="width:100%">
+
+            <h3>Non-Optional Settings </h3>
+            <ol style="width:100%">
+                <li>Provide the Json source <span>jsonSource</span></li>
+                <li>Provide images path <span>imagePath</span></li>
+                <li>Provide a name header for the box <span>nameParameterJSON</span></li>
+                <li>Image file name is the same as <span>nameParameterJSON</span></li>
+                <li>Provide a comma delimited list of the box items excluding the name.
+                    It should show the items the way you want them to display on your page.
+                    Put the comma delimited list in <span>jsonParametersHTML</span> </li>
+                <li>Provide a comma delimited list of items in the json string minus the name (title).
+                    Add the list to <span>jsonParametersJSON</span> the same way as shown below.
+                </li>
+                <li>The plugin puts the plugin results in a div with a class name of your choice that as to be put under
+                    <span>containerId</span> in the wrapper settings.</li>
+            </ol>
+            <img src="images/main_options.png" alt="main_options" style="width:115%">
+            <h3>Optional Settings</h3>
+            <p>Optional settings are for styling, they are divided into 2 sections.
+                <ol>
+                    <li>
+                        Text inside of the box options: <br>
+                        <img src="images/text_settings.png" alt="text_settings" style="width:65%">
+                    </li>
+                    <li>
+                        Box options:<br>
+                        <img src="images/box_settings.png" alt="box_settings" style="width:50%">
+                    </li>
+                    <li>
+                        An optional property for the height of the div container.<br>
+                        <img src="images/container_Height.png" alt="container_Height" style="width:50%">
+                    </li>
+                </ol>
+                <p>
+                    You can use any combination of the optional settings feeding it css values.
+                    The settings you see in the diagrams above are the default settings for the plugin.
+                </p>
+                <hr>
+            </p>
+        </section>
+    </main>
+</body>
+
+</html>

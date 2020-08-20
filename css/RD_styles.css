@@ -1,0 +1,814 @@
+/* Style sheet 
+created by: Amr Abdallah
+Date      : 28th of January, 2019 */
+
+/* blur background */
+.blur-all {
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(10px);
+}
+
+/* Style The Dropdown Button */
+.dropbtn {
+    background-color: #363136;
+    color: white;
+    /* padding: 16px; */
+    /* font-size: 16px; */
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 15%;
+    box-shadow: 0px 8px 16px 0px rgba(243, 118, 210, 0.6);
+    z-index: 4;
+    margin-top: -14px;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: #FFFFFF;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    /* z-index: 111; */
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+      background-color: #f1f1f1;
+      display: block;
+    }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: #ee4de0;
+  }
+  /* ----------------------------------------------------------------------------------------------------------------- */
+
+header h2 {
+    vertical-align: top;
+    background-color: #342d33;
+    color: white;
+    font-size: 1.6em;
+    font-family: 'rockwell';
+    margin-top: -0.2em;
+    padding-right: 2%;
+}
+
+main h2 {
+    vertical-align: top;
+    background-color: #4d0842;
+    border-radius: 70%;
+    color: white;
+    font-family: 'rockwell';
+    font-size: 2em;
+    text-shadow: 2px 2px #ff00aa;
+    text-align: center;
+}
+
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: .83em;
+    margin-top: -35px;
+
+}
+
+main h1 {
+    font-size: 2em;
+
+    color: #342d33;
+    text-align: center;
+}
+
+caption {
+    margin:0 auto;
+}
+
+article {
+    color: #000000;
+    border-top-color: #ff00aa;
+    background-color: #FFFFFF;
+    border-top-style: solid;
+    margin-top: 2em;
+}
+
+h3 {
+	/* font-size: 120%; */
+	padding: .25em 0 .25em 25px;
+	background: url(../images/plus.png) no-repeat left center;
+}
+h3.minus {
+	background: url(../images/minus.png) no-repeat left center;
+}
+
+article h3 a{
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Style for the aside element */
+aside {
+    background-color: #c40995;
+    color:#FFFFFF;
+    border-radius: 0 5em 5em 5em;
+    box-shadow: 1em 1em 1em #4C4F4D;
+    padding: 2em;
+    margin: 1em;
+    padding-left: 6em;
+    padding-right: 6em;
+    margin: 2%;
+}
+
+/* products json */
+.blueberry{
+    float: left;
+    padding-right: .5em;
+    text-align: right;
+    width: 12em;
+}
+
+.productBlue{
+    background-color: #4e6ec4;
+    color:#FFFFFF;
+    border-radius: 0 5em 0em 5em;
+    box-shadow: 1em 1em 1em #4C4F4D;
+    padding: 0.5em;
+    margin: 0.5em;
+    padding-left: 35%;
+    padding-right: 6em;
+    font-size: 1.2em;
+    text-shadow: 2px 2px #000000;
+}
+
+.everalda {
+    font-family: broadway;
+    color: #ff00aa;
+}
+
+.center{
+    margin:0 auto;
+}
+
+.fig{
+  width: 90%;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+  border: thin silver solid;
+  margin: 0 auto;
+  padding: 0.5em;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* Style for header specifis top margin, background color, rounded corners, and center-aligns content*/
+header {
+    margin-top: 2.2em;
+
+}
+
+/*Style for nav specifies text property*/
+nav {
+    font-family: "times New Roman";
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    margin: -1em;
+}
+
+/*Style specifies padding and margins for unordered list*/
+nav ul {
+    padding: 0;
+}
+
+/* Style for nav li specifies the background color, rounded corners, removes bullet style, and applies margins and padding for list items within the navigation */
+nav li {
+    background-color: #090f0b;
+    list-style-type: none;
+    margin: 0.3em;
+    padding: 0.4em;
+    white-space: nowrap;
+}
+
+/* Style Changes navigation link text color to white and removes the underline */
+nav li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* Style displays the mobile class */
+.mobile {
+    display: inline;
+}
+
+
+/* Style hides the desktop class */
+.desktop {
+    display: none;
+}
+
+/* Style for Main element specifies a block display, text properties, margins, padding, rounded corners, and border properties */
+main {
+    display: block;
+    /*Block paragraphs are Prefereerd by Jim Cooper */
+    font-size: 1em;
+    /* margin-top: 2em; */    
+    /* padding: 1em; */
+    border-radius: 1em;
+    background-color: #FFFFFF;
+    border-top: solid 0.2em #ee4de0;
+    border-bottom: solid 0.2em #ee4de0;
+}
+
+/*Style for footer*/
+footer {
+    font-size: 0.7em;
+    text-align: center;
+    margin-top: 2em;
+}
+
+/* Style hides the tablet class */
+.tablet {
+    display: none;
+}
+
+ul {
+    margin-bottom: 50px;
+    list-style-position: inside;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    padding-bottom: 20px;
+}
+
+.hidemobile {
+    display: none;
+}
+
+.up {
+    margin-top: -1.2em;
+}
+
+
+.makebold {
+    font-weight: bold;
+}
+
+.banner {
+    margin-top: -1.2em;
+    width: 100%;
+    display: none;
+}
+
+.mbanner {
+    margin-top: -1.3em;
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+
+.floatleft {
+    clear: left;
+    clear: right;
+    float: left;
+    margin-right: 2%;
+    clear: left;
+    clear: right;
+}
+
+.leftImages{
+    clear: left;
+    clear: right;
+    margin-left: 2%;
+   /* width: 10%; */
+    
+    margin-left: 4%;
+    margin-top: 0.5em;
+    border: #333 solid;
+    width: 40%;
+    clear: left;
+    clear: right;
+}
+.floatright {
+    clear: left;
+    clear: right;
+    float: right;
+    margin-left: 2%;
+   /* width: 10%; */
+    
+    margin-left: 4%;
+    margin-top: 0.5em;
+    border: #333 solid;
+    width: 49%;
+    clear: left;
+    clear: right;
+}
+
+.blue {
+    background-color: #4e6ec4;
+    color: #FFFFFF;
+    border-radius: 20px;
+    width: 96%;
+    padding: 8px 6px 7px;
+    margin-top: 3px;
+    align-items: center;
+}
+
+
+
+.poofImg {
+    display: none;
+}
+
+/* Media query for tablet viewport targets screen size with a minimum width of 481px*/
+
+.mobilebullets {
+    width: 100%;
+    padding-left: 0.5%;
+    padding-right: 2%;
+}
+
+/*------------------------------------------------*/
+.black_section {
+    clear: left;
+    background-color: #000000;
+    color: #FFFFFF;
+    border-radius: 6em;
+    width: 520px;
+    padding: 5px 20px 5px;
+    margin-top: 1.5em;
+    max-width: 48%;
+    font-size: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 2em;
+    text-shadow: 1em;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin: 0 auto;
+    float:left;
+    clear: left;
+}
+
+.pink_section {
+    clear: left;
+    background-color: #c40995;
+    color: #FFFFFF;
+    border-radius: 6em;
+    width: 520px;
+    padding: 5px 20px 5px;
+    margin-top: 1.5em;
+    max-width: 48%;
+    margin-bottom: 1.5em;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin: 0 auto;
+    float:left;
+    clear: left;
+}
+
+footer{
+    background-color: #333;
+    color: #FFFFFF;
+    padding: 1em;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+footer a:link{
+    color: #fc9ef4;
+}
+
+
+.vid{
+    max-width: 100%;
+    
+}
+
+@media only screen and (min-width: 481px) {
+
+    /* mobile*/
+
+    #container {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    nav ul {
+        padding: 0;
+        background: #000000;
+    }
+
+    #menuwrapper {
+        text-decoration: none;
+        color: white;
+        background-color: rgb(241, 8, 8);
+        width: 100%;
+        margin-top: -0.3em;
+        font-size: 1.2em;
+    }
+
+
+    /* Style Specifies a horizontal display for navigation links*/
+    nav li {
+
+        background-color: #333;
+        padding: 0.12em;
+        white-space: nowrap;
+        display: inline;
+        float: left;
+        margin-left: 1%;
+        margin-right: 1%;
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 0.2em;
+        width: 19%;
+        font-size: 1.2 em;
+        margin-bottom: 0.1em;
+    }
+
+    /* style specifies clear and top margin propereties for the main element  */
+    main {
+        clear: left;
+        margin-top: 1em;
+    }
+
+    /* Style specifies to hide the mobile class */
+    .mobile {
+        display: none;
+    }
+
+    /* Style specifies to display the desktop class */
+    .desktop {
+        display: inline;
+    }
+
+}
+
+@media only screen and (min-width: 482px) {
+
+    /* Tablet */
+
+    #container {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* style specifies clear and top margin propereties for the main element  */
+    main {
+        clear: left;
+        /* margin-top: 1em; */
+    }
+
+    /* Style specifies to hide the mobile class */
+    .mobile {
+        display: none;
+    }
+
+    /* Style specifies to display the desktop class */
+
+
+    header h2 {
+        vertical-align: top;
+        background-color: #342d33;
+        color: white;
+        font-size: 1em;
+        font-family: 'rockwell';
+        margin-top: -0.5em;
+    }
+
+
+    /* tablet nav */
+    nav {
+
+        font-size: .65em;
+        font-weight: normal;
+        clear: both;
+        margin-bottom: -4em;
+        text-align: center;
+    }
+
+    /* make nav menu horizontal */
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    nav li {
+        float: left;
+        height: 20px;
+        white-space: nowrap;
+        margin-left: 0em;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        width: 14%;
+    }
+
+    nav li a {
+        display: block;
+        color: white;
+        padding: 3px 20px 10px;
+        text-decoration: none;
+
+    }
+
+    nav li a:hover:not(.active) {
+        background-color: #000000;
+        padding-top: 15px;
+        font-weight: bold;
+    }
+
+
+    #wrapper {
+        width: 80%;
+        margin: 0 auto 0 auto;
+    }
+
+
+    .banner {
+        margin-top: -0.8em;
+        margin-bottom: 0.25em;
+        width: 100%;
+        display: block;
+    }
+
+    .mbanner {
+        margin-top: -1.2em;
+        width: 100%;
+        display: none;
+    }
+
+    .black_section {
+        background-color: #000000;
+        color: #FFFFFF;
+        border-radius: 6em;
+        width: 35%;
+        padding: 5px 20px 5px;
+        margin-top: 2.5em;
+        max-width: 48%;
+        font-size: 1em;
+        padding-top: 0.5em;
+        padding-bottom: 2em;
+        text-shadow: 1em;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .pink_section {
+        background-color: #c40995;
+        color: #FFFFFF;
+        border-radius: 6em;
+        width: 35%;
+        padding: 5px 20px 5px;
+        margin-top: 1.5em;
+        max-width: 48%;
+        margin-bottom: 1.5em;
+        padding-top: 1em;
+        padding-bottom: 2em;
+        margin: 0;
+    }
+
+    .mainlogo {
+        margin-top: .3em;
+        margin-bottom: .2em;
+        width: 100%;
+        height: 4em;
+    }
+
+    .fig{
+        width: 40%;
+        text-align: center;
+        font-style: italic;
+        font-size: smaller;
+        text-indent: 0;
+        border: thin silver solid;
+        margin: 0 auto;
+        padding: 0.5em;
+      }
+
+      .center{
+        max-width: 100%;
+        margin-left: 5%;
+        margin-right: auto;
+        justify-content: right;
+        text-align: center;
+    }
+    
+    .vid{
+        max-width: 100%;  
+    }
+}
+
+
+@media only screen and (min-width: 790px) {
+    /* Desktop */
+
+    #container {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* style specifies clear and top margin propereties for the main element  */
+    main {
+        clear: left;
+    }
+
+    /* Style specifies to hide the mobile class */
+    .mobile {
+        display: none;
+    }
+
+    /* Style specifies to display the desktop class */
+    .desktop {
+        display: inline;
+    }
+
+    .banner {
+        margin-top: -1.35em;
+        width: 100%;
+        display: block;
+    }
+
+    .mbanner {
+        margin-top: -1.2em;
+        width: 100%;
+        display: none;
+    }
+
+    header h2 {
+        vertical-align: top;
+        background-color: #342d33;
+        color: white;
+        font-size: 1.6em;
+        font-family: 'rockwell';
+        margin-top: -0.9em;
+        padding-right: 2%;
+    }
+
+    /* Desktop nav Menu */
+    nav {
+        display: inline; 
+        font-size: 0.9em;
+        font-weight: normal;
+        clear: both;
+        margin: -0.0em;
+        height: 0.5em;
+        text-align: center;
+    }
+
+    /* make nav menu horizontal */
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    nav li {
+        float: left;
+        height: 40px;
+        white-space: nowrap;
+        margin-left: 0em;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        width: 15%;
+    }
+
+    nav li a {
+        display: block;
+        color: white;
+        padding: 15px 15px 25px 20px;
+        text-decoration: none;
+
+    }
+
+    nav li a:hover:not(.active) {
+        background-color: #000000;
+        padding-top: 15px;
+        font-weight: bold;
+    }
+
+    .up {
+        margin-top: -1.3em;
+    }
+
+    .blue {
+        background-color: #4e6ec4;
+        color: #FFFFFF;
+        border-radius: 20px;
+        width: 45%;
+        padding: 5px 10px 5px;
+        margin-top: 3px;
+    }
+
+    .pink_section {
+        margin-right: 5%;
+        margin-left: 5%;
+        background-color: #c40995;
+        color: #FFFFFF;
+        border-radius: 6em;
+        width: 35%;
+        padding: 5px 20px 5px;
+        margin-top: 3.5em;
+        max-width: 48%;
+        padding-top: 1em;
+        padding-bottom: 2em;
+        margin-bottom: 1em;
+    }
+
+    .mainlogo {
+        margin-top: 0.5em;
+        margin-bottom: 1em;
+        width: 100%;
+        height: 7em;
+    }
+
+    .fig{
+        width: 40%;
+        text-align: center;
+        font-style: italic;
+        font-size: medium;
+        text-indent: 0;
+        border: thin silver solid;
+        margin: 0 auto;
+        padding: 0.5em;
+      }
+
+      footer{
+        background-color: #333;
+        color: #FFFFFF;
+        padding: 1em;
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+    .Mini{
+        width:50%;
+    }
+
+    .vid{
+        max-width: 50%;
+        
+    }
+}
+
+.active {
+    background-color: #ee4de0;
+}
+
+
+@media only screen and (min-width: 1217px) {
+
+    /*Desktop Extended width */
+
+    #wrapper {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .floatright{
+        width: 518px ;
+        margin-bottom: 1em;
+        
+    }
+}
+
+ul{
+    list-style-position: outside;
+}

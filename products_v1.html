@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" href="images/favIco_logo.png">
+	<link rel="stylesheet" href="css/RD_styles.css"> <!-- Linking Style Sheet-->
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script src="http://12.42.204.30:7002/jquery.jtable.js"></script>
+	<script src="http://12.42.204.30:7002/scripts/helpers.js"></script>
+	
+	<link href="http://12.42.204.30:7002/themes/metro/darkgray/jtable.css" rel="stylesheet"> 
+
+	<!-- The above code should not be changed -->
+
+	<link href="css/myStyles.css" rel="stylesheet"> <!--Modify myStyles.css to add additional styles -->
+	
+
+	<title>Everalda</title> <!-- Modify title for your application -->
+
+	<script>
+		$(document).ready(function () {
+			$('#container1').jtable({
+				title: 'Stroller Listing',
+				paging: true,
+				pageSize: 15,
+				sorting: true,
+				defaultSorting: 'product_id asc',
+				actions: {
+					listAction: 'genJson2.rpgle?jtView=PRODV1'
+				},
+				fields: {
+					product_id: {
+						title: 'ID',
+						width: '8%',
+						list: true
+					},
+					model_name: {
+						title: 'Model',
+						width: '15%',
+						list: true
+					},
+					model_description: {
+						title: 'Description',
+						width: '30%',
+						list: true
+					},
+					quantity_on_hand: {
+						title: 'Quantity',
+						width: '12%',
+						list: true
+					},
+					price_wholesale: {
+						title: 'Wholesale Price',
+						width: '17%',
+						list: true,
+						display: function (data) {
+							return formatCurrency(data.record.price_wholesale)
+						},
+					},
+					price_retail: {
+						title: 'Retail Price',
+						width: '15%',
+						list: true,
+						display: function (data) {
+							return formatCurrency(data.record.price_retail)
+						},
+					}
+				}
+			});
+			$('#container1').jtable('load');
+		});
+	</script>
+
+	<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="scripts/Ev_main.js"></script>
+</head>
+
+<body style="background-color: white">
+	<div id="wrapper">
+		<header>
+			<!-- Header start here -->
+			<div class="desktop">
+				<img src="images/logo.png"
+					alt="A mom and a baby in an everalda stroller enjoying a sunny day banner image" class="mainlogo">
+			</div>
+			<div class="mobile">
+				<img src="images/mobile_logo.png"
+					alt="A mom and a baby in an everalda stroller enjoying a sunny day banner image" class="mainlogo">
+			</div>
+
+			<h2 id="subtitle">Cutting Edge Designs That Fit The New Century</h2>
+			<img src="images/banner2.jpg"
+				alt="A mom and a baby in an everalda stroller enjoying a sunny day banner image" class="banner">
+			<img src="images/banner2_mobile.jpg"
+				alt="A mom and a baby in an everalda stroller enjoying a sunny day banner image" class="mbanner">
+			<!-- width='1052' height="190" -->
+		</header>
+		<nav>
+			<!-- Nav start here -->
+			<div id="menuwrapper">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About Everalda</a></li>
+					<li><a href="team.html">Meet our Team</a></li>
+					<li class="active"><a href="products_v4.html">Products</a></li>
+					<li><a href="training.html">Training</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+			</div>
+		</nav>
+		<main>
+			<section>
+				<h1>Everalda Product Line</h1>
+				<div id="container1"></div>
+			</section>
+		</main>
+
+	</div>
+</body>
+
+</html>
