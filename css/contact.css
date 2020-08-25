@@ -132,7 +132,8 @@ form ul {
 }
 
 .bg {
-    background-image: url("../images/team.jpg");
+    background: url("../images/team.jpeg") no-repeat;
+    background-size: 100%;
 }
 
 ::placeholder {
