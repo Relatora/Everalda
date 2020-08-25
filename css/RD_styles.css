@@ -3,6 +3,16 @@ created by: Amr Abdallah
 Date      : 28th of January, 2019 */
 
 /* blur background */
+.center-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.h3-normal{
+    background: none;
+}
+
 .blur-all {
     -webkit-filter: blur(10px);
     -moz-filter: blur(10px);
