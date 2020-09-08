@@ -324,7 +324,7 @@ dd {
     margin-left: 4%;
     margin-top: 0.5em;
     border: #333 solid;
-    width: 40%;
+    width: 80%;
     clear: left;
     clear: right;
 }
@@ -384,8 +384,8 @@ dd {
     padding-left: 10%;
     padding-right: 10%;
     margin: 0 auto;
-    float:left;
-    clear: left;
+    /* float:left;
+    clear: left; */
 }
 
 .pink_section {
@@ -403,8 +403,19 @@ dd {
     padding-left: 10%;
     padding-right: 10%;
     margin: 0 auto;
-    float:left;
-    clear: left;
+    
+    /* float:left;
+    clear: left; */
+}
+
+.grid-parent {
+    width: 100%;
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+}
+
+.card {
+    width:100%;
 }
 
 footer{
@@ -422,7 +433,6 @@ footer a:link{
 
 .vid{
     max-width: 100%;
-    
 }
 
 @media only screen and (min-width: 481px) {
@@ -458,15 +468,15 @@ footer a:link{
         padding: 0.12em;
         white-space: nowrap;
         display: inline;
-        float: left;
+        /* float: left; */
         margin-left: 1%;
         margin-right: 1%;
         padding-left: 0;
         padding-right: 0;
-        margin-top: 0.2em;
-        width: 19%;
-        font-size: 1.2 em;
-        margin-bottom: 0.1em;
+        /* margin-top: 0.2em; */
+        /* width: 19%; */
+        /* font-size: 1.2 em; */
+        /* margin-bottom: 0.1em; */
     }
 
     /* style specifies clear and top margin propereties for the main element  */
