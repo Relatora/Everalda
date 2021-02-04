@@ -11,7 +11,7 @@ $(document).ready(function () {
         searchTerm = "";        // initializes searchTerm variable
         if ($("#search").val() == "") { alert("You must enter one or more tags!"); } else {     // Alerts the user that nothing was entered in the search field
             searchTerm = $("#search").val(); var url =  // loads searchTerm with the flickr url injected with the search tag
-                "http://api.flickr.com/services/feeds/photos_public.gne?" + "format=json&jsoncallback=?&tags=" + searchTerm + "&tagmode=all";
+                "https://api.flickr.com/services/feeds/photos_public.gne?" + "format=json&jsoncallback=?&tags=" + searchTerm + "&tagmode=all";
             $.getJSON(url, function (data) {            // gets the json data returned from flickr
                 var html = " <div style='width:90%; margin:0 auto'><h1>Flickr Results</h1>";    // initializes html string
                 $.each(data.items, function (i, item) { // Iterates through json data building html result
