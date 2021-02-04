@@ -376,7 +376,7 @@ dd {
     width: 520px;
     padding: 5px 20px 5px;
     margin-top: 1.5em;
-    max-width: 48%;
+    min-width: 90%;
     font-size: 1em;
     padding-top: 0.5em;
     padding-bottom: 2em;
@@ -392,11 +392,11 @@ dd {
     clear: left;
     background-color: #c40995;
     color: #FFFFFF;
-    border-radius: 6em;
+    border-radius: 2em;
     width: 520px;
     padding: 5px 20px 5px;
     margin-top: 1.5em;
-    max-width: 48%;
+    min-width: 90%;
     margin-bottom: 1.5em;
     padding-top: 1em;
     padding-bottom: 2em;
@@ -596,11 +596,11 @@ footer a:link{
     .black_section {
         background-color: #000000;
         color: #FFFFFF;
-        border-radius: 6em;
+        border-radius: 2em;
         width: 35%;
         padding: 5px 20px 5px;
         margin-top: 2.5em;
-        max-width: 48%;
+        min-width: 90%;
         font-size: 1em;
         padding-top: 0.5em;
         padding-bottom: 2em;
@@ -612,14 +612,13 @@ footer a:link{
     .pink_section {
         background-color: #c40995;
         color: #FFFFFF;
-        border-radius: 6em;
+        border-radius: 2em;
         width: 35%;
         padding: 5px 20px 5px;
         margin-top: 1.5em;
-        max-width: 48%;
+        min-width: 90%;
         margin-bottom: 1.5em;
         padding-top: 1em;
-        padding-bottom: 2em;
         margin: 0;
     }
 
@@ -762,13 +761,13 @@ footer a:link{
         margin-left: 5%;
         background-color: #c40995;
         color: #FFFFFF;
-        border-radius: 6em;
+        border-radius: 2em;
         width: 35%;
         padding: 5px 20px 5px;
         margin-top: 3.5em;
         max-width: 48%;
         padding-top: 1em;
-        padding-bottom: 2em;
+        padding-bottom: 1em;
         margin-bottom: 1em;
     }
 
